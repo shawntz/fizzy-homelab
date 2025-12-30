@@ -7,7 +7,8 @@ module Account::MultiTenantable
 
   class_methods do
     def accepting_signups?
-      multi_tenant || Account.none?
+      # Homelab modification: Disable new signups to prevent unauthorized account creation
+      false
     end
   end
 end

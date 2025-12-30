@@ -12,6 +12,16 @@ You can find the details of how to do a Docker-based deployment in our [Docker d
 
 If you want more flexibility to customize your Fizzy installation by changing its code, and deploy those changes to your server, then we recommend you deploy Fizzy with Kamal. You can find a complete walkthrough of doing that in our [Kamal deployment guide](docs/kamal-deployment.md).
 
+### Homelab Edition (Signups Disabled)
+
+For users who want to host Fizzy privately (e.g., behind a Cloudflare Tunnel) without allowing public signups, there's a **Homelab Edition** available at `shawnschwartz/fizzy-homelab`. This variant has new account signups completely disabled for enhanced security in private deployments.
+
+- **Multi-Architecture**: Supports both ARM64 and AMD64 (perfect for Raspberry Pi or standard servers)
+- **Security-Focused**: Prevents unauthorized users from requesting signup emails
+- **Homelab-Ready**: Designed for private, personal, or small team deployments
+
+See the [Homelab Deployment Guide](docs/docker-homelab-deployment.md) for setup instructions.
+
 
 ## Development
 
