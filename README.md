@@ -14,7 +14,7 @@ If you want more flexibility to customize your Fizzy installation by changing it
 
 ### Homelab Edition (Signups Disabled)
 
-For users who want to host Fizzy privately (e.g., behind a Cloudflare Tunnel) without allowing public signups, there's a **Homelab Edition** available at `shawnschwartz/fizzy-homelab`. This variant has new account signups completely disabled for enhanced security in private deployments.
+For users who want to host Fizzy privately (e.g., behind a Cloudflare Tunnel) without allowing public signups, there's a **Homelab Edition** available at `shawnschwartz/fizzy-homelab` (DockerHub) or `ghcr.io/shawntz/fizzy-homelab` (GitHub Container Registry). This variant has new account signups completely disabled for enhanced security in private deployments.
 
 - **Multi-Architecture**: Supports both ARM64 and AMD64 (perfect for Raspberry Pi or standard servers)
 - **Security-Focused**: Prevents unauthorized users from requesting signup emails

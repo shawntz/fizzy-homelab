@@ -10,7 +10,9 @@ This is a modified version of Fizzy designed specifically for homelab deployment
 
 ### Quick Start
 
-We provide pre-built multi-architecture Docker images at `shawnschwartz/fizzy-homelab:latest`.
+We provide pre-built multi-architecture Docker images available from two registries:
+- **DockerHub**: `shawnschwartz/fizzy-homelab:latest`
+- **GitHub Container Registry**: `ghcr.io/shawntz/fizzy-homelab:latest`
 
 To run it you'll need three things:
 - A machine that runs Docker (supports both ARM64 and AMD64 architectures)
@@ -26,6 +28,8 @@ The simplest way to do this is with the `--volume` flag with `docker run`. For e
 
 ```sh
 docker run --volume fizzy-homelab:/rails/storage shawnschwartz/fizzy-homelab:latest
+# or use GitHub Container Registry
+docker run --volume fizzy-homelab:/rails/storage ghcr.io/shawntz/fizzy-homelab:latest
 ```
 
 That will create a named volume (called `fizzy-homelab`) and mount it into the correct path.
